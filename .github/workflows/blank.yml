@@ -34,3 +34,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+- name: Upload APK
+  uses: actions/upload-artifact@v3
+  with:
+    name: DexAi_Ovey.apk
+    path: app/build/outputs/apk/debug/app-debug.apk
